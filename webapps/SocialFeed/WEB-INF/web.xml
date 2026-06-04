@@ -1,0 +1,13 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>FeedServlet</servlet-name>
+        <servlet-class>feed.FeedServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FeedServlet</servlet-name>
+        <url-pattern>/feed/*</url-pattern>
+    </servlet-mapping>
+
+</web-app>
