@@ -63,7 +63,6 @@ public class FeedServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         String requestUrl = request.getRequestURI();
         String user = requestUrl.substring("/SocialFeed/feed/".length());
-        System.out.println("User : " +  user);
 
         if("".equals(user)){
             request.setAttribute("title", "All Posts");
